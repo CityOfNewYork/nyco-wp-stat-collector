@@ -316,10 +316,12 @@ class Settings {
     register_setting($statc_option_group, $statc_database);
     register_setting($statc_option_group, $statc_user);
     register_setting($statc_option_group, $statc_password);
-    register_setting($statc_option_group, $statc_bootstrapped);
-    register_setting($statc_option_group, $statc_ssl);
-    register_setting($statc_option_group, $statc_connection);
     register_setting($statc_option_group, $statc_notify);
+
+    /** If these are not disabled, they will need to be registered */
+    // register_setting($statc_option_group, $statc_bootstrapped);
+    // register_setting($statc_option_group, $statc_ssl);
+    // register_setting($statc_option_group, $statc_connection);
   }
 
   /**
