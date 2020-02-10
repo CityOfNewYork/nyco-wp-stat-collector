@@ -368,7 +368,7 @@ class Settings {
       '<fieldset>',
       '  <legend class="screen-reader-text"><span>' . __($args['label']) . '</span></legend>',
       '  <label for="' . $args['id'] . '">',
-      '    <input type="checkbox" value="5" name="' . $args['id'] . '" id="' . $args['id'] . '" ',
+      '    <input type="checkbox" value="' . $args['value'] . '" name="' . $args['id'] . '" id="' . $args['id'] . '" ',
       '    ' . checked($args['value'], get_option($args['id']), false) . ' ',
       '    ' . disabled($args['disabled'], true, false) . ' >',
       '    ' . __($args['label']) . '',
